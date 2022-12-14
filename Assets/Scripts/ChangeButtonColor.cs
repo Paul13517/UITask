@@ -1,23 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class ChangeButtonColor : MonoBehaviour
 {
-    public Animation anim;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   [SerializeField] private Animation anim;
+  
 
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
-    public void OnMouseEnter(){
-    anim.Play();  
-    }
+     public void ChangeColor()
+      {
+        anim.Play();
+      }
+
+ 
+
+
 
 }
